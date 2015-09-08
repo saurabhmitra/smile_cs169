@@ -388,4 +388,6 @@ git push -f origin part1:gh-pages
 
 1. Now your finished project should be up on http://your_username.github.io/smile_cs169
 
+1. Watch Piazza and the class web site for the link to a form where you will
+   have to submit the url to your project. 
 
