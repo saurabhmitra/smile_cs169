@@ -376,7 +376,7 @@ We'll use Github Pages to host your Smile app. To set this up:
 git push origin part1
 ```
    - You can submit multiple times, after intermediate tasks, but on the deadline
-      you need to have submitted the end result (after Task 4).
+      you need to have submitted the end result.
    
 1. GitHub has a feature whereby it can host your HTML files. To enable
     this feature you must have a branch named `gh-pages`.
@@ -385,8 +385,10 @@ git push origin part1
 ```
 git push -f origin part1:gh-pages
 ```
-
-1. Now your finished project should be up on http://your_username.github.io/smile_cs169
+    - Now your finished project should be up on http://your_username.github.io/smile_cs169/static
+    - We will use this url to see and grade your project. Please do not change
+      your gh-pages branch until you hear that we have graded Part 1.
+    
 
 1. Watch Piazza and the class web site for the link to a form where you will
    have to submit the url to your project. 
