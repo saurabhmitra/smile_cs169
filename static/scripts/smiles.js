@@ -5,7 +5,7 @@ var Smile = (function() {
         
     // The backend we'll use for Part 2. For Part 3, you'll replace this 
     // with your backend.
-    var apiUrl = 'https://smileback-cs169.herokuapp.com'; 
+    var apiUrl = 'http://localhost:3000'; 
 
     // FINISH ME (Task 4): You can use the default smile space, but this means
     //            that your new smiles will be merged with everybody else's
@@ -76,7 +76,7 @@ var Smile = (function() {
         // FINISH ME (Task 2): fill-in the rest of the data
         newElem.find('.story').text(smile.story);
         newElem.find('.count').text(smile.like_count);
-        newElem.find('.timestamp').text('Posted at '.concat((new Date(smile.created_at*1000))));
+        newElem.find('.created_at').text('Posted at '.concat((new Date(smile.created_at*1000))));
         newElem.find(".happiness-level-1").attr("class", "happiness-level-".concat(smile.happiness_level));
         // console.log(smile);
         if (beginning) {
@@ -99,6 +99,7 @@ var Smile = (function() {
             } else {
                 for (i = 0; i < data.smiles.length; i++) {
                     insertSmile(data.smiles[i], i == 0);
+                    console.log(smiles[i]);
                 }
             }
         };
